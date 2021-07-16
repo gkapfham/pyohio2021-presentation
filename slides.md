@@ -4,6 +4,7 @@ class: text-center
 highlighter: prism
 colorSchema: 'light'
 download: true
+preload: false
 fonts:
   # basically the text
   sans: 'IBM Plex Sans'
@@ -38,12 +39,17 @@ info: |
  &nbsp;
 </div>
 
-```python
+<v-click>
+
+```python {all|1|2|all|2}
 def start(t: Talk) -> Union[Fun, Info]:
+def start(t: Talk) -> List[Fun, Info]:
 ```
 
+</v-click>
+
 <a href="https://github.com/gkapfham/pyohio2021-presentation" target="_blank" alt="GitHub"
-  class="abs-br text-6xl p-4 -my-1 icon-btn opacity-100 !border-none !hover:text-dark-500">
+  class="abs-br text-6xl p-4 -my-1 icon-btn opacity-100 !border-none !hover:text-orange-600">
   <carbon-logo-github />
 </a>
 
