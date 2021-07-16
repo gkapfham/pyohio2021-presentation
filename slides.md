@@ -87,7 +87,7 @@ def start(t: Talk) -> List[Fun, Info]:
 
 <div class="flex row">
 
-<uim-rocket class="text-6xl ml-9 mt-5 text-blue-600" />
+<uim-rocket class="text-6xl ml-8 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
 Let's explore type annotations in Python programs!
