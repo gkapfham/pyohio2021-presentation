@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev-open": "slidev --open",
     "dev": "slidev",
+    "open": "slidev --open",
+    "remote": "slidev --remote",
     "eject": "slidev theme eject",
     "build": "slidev build",
     "export": "slidev export"
