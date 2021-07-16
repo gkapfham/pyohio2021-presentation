@@ -179,6 +179,13 @@ What are the trade-offs of type annotations?
 
 # Challenges
 
+<style>
+  li {
+  font-size: 22px;
+  margin-bottom: 10px;
+  }
+</style>
+
 - *Readability* : function signatures are more difficult to read
 - *Productivity* : programmer often must add type annotations
 - *Complexity* : programs use many new classes and types
