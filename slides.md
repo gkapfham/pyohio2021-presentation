@@ -4,25 +4,46 @@ class: text-center
 highlighter: prism
 colorSchema: 'light'
 download: true
+fonts:
+  # basically the text
+  sans: 'IBM Plex Sans'
+  # use with `font-serif` css class from windicss
+  serif: 'IBM Plex'
+  # for code blocks, inline code, etc.
+  mono: 'Fira Code'
 info: |
-  ## Simple-slidev-sample 
+  ## Simple-slidev-sample
   Simple Slidev Sample
 ---
 
-# Simple Slidev Sample
+# Type Annotations in Python
 
-## Slides that Illustrate Slidev's Features
+<style>
+  code {
+    font-size: 36px;
+  }
+</style>
 
-**Gregory M. Kapfhammer**
+## Terribly Intimidating or Tremendously Informative?
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 p-1 rounded cursor-pointer" hover="bg-black bg-opacity-30">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
+<div class="container my-1">
+ &nbsp;
 </div>
 
-<a href="https://github.com/gkapfham/simple-slidev-sample" target="_blank" alt="GitHub"
-  class="abs-br m-6 text-xl icon-btn opacity-100 !border-none !hover:text-dark-500">
+### Gregory M. Kapfhammer
+
+### PyOhio 2021
+
+<div class="container my-5">
+ &nbsp;
+</div>
+
+```python
+def start(t: Talk) -> Union[Fun, Info]:
+```
+
+<a href="https://github.com/gkapfham/pyohio2021-presentation" target="_blank" alt="GitHub"
+  class="abs-br text-6xl p-4 -my-1 icon-btn opacity-100 !border-none !hover:text-dark-500">
   <carbon-logo-github />
 </a>
 
