@@ -48,11 +48,6 @@ def start(t: Talk) -> List[Fun, Info]:
 
 </v-click>
 
-<a href="https://github.com/gkapfham/pyohio2021-presentation" target="_blank" alt="GitHub"
-  class="abs-br text-6xl p-4 -my-1 icon-btn opacity-100 !border-none !hover:text-orange-600">
-  <carbon-logo-github />
-</a>
-
 ---
 
 ---
@@ -106,31 +101,40 @@ Let's explore type annotations in Python programs!
 
 # Python Program without Annotations
 
+<style>
+</style>
+
+<div class="-ml-9">
+
 ```python
-def extract_urls(repos_dataframe: pandas.DataFrame)
-    -> List[Union[str, Any]]:
+def extract_urls(df: pandas.DataFrame) -> List[str]:
     """Extract a list of urls."""
-    url_column_list = []
-    if "Url" in repos_dataframe.columns:
-        url_column_series = 
-         repos_dataframe[constants.data.Url]
-        if url_column_series is not None:
-            url_column_list = url_column_series.tolist()
-    return list(url_column_list)
+    urls = []
+    if "Url" in df.columns:
+        urlc = df["Url"]
+        if urlc is not None:
+            urls = urlc.tolist()
+    return urls
 ```
-
-<v-clicks>
-
-<div class="absolute top-100 text-5xl font-extrabold bold-text">
-
-<p class = "bold">
-What is the purpose of <code>f"The message is: {message}"</code> ?
-</p>
 
 </div>
 
+<br>
+
+<v-clicks>
+
+<p class = "bold">
+What is the purpose of <code>df: pandas.DataFrame</code> ?
+</p>
+
+<p class = "bold">
+How does <code>List[str]</code> describe output of <code>extract_urls</code> ?
+</p>
+
+
 </v-clicks>
 
+---
 
 # Hello World with Highlighting
 
