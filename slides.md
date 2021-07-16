@@ -52,7 +52,7 @@ def start(t: Talk) -> List[Fun, Info]:
 
 ---
 
-# Okay, What Will I Learn?
+# <em>Okay</em>, what will I learn?
 
 <style>
   h2 {
@@ -65,7 +65,7 @@ def start(t: Talk) -> List[Fun, Info]:
 
 <div v-click>
 
-## Key questions
+## Key Questions
 
 > What are the **benefits** and **challenges** associated with using type annotations
 > inside of Python program? Will they help me be a better Python programmer?
