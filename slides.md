@@ -49,24 +49,82 @@ def start(t: Talk) -> Union[Fun, Info]:
 
 ---
 
-# Technical Question
+---
+
+# Okay, What Will I Learn?
+
+<style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4;
+  }
+</style>
 
 <br>
+
+<div v-click="1">
+
+## Key questions
+
+> What are the **benefits** and **challenges** associated with using type annotations
+> inside of Python program? Will they help me be a better Python programmer?
+
+</div>
+
 <br>
 
-> How do I connect mathematical terminology (e.g., *mapping*, *function*,
-> *number*, *sequence*, and *set*), to the implementation of Python
-> programs that declare and call functions and declare and manipulate
-> variables?
+<div v-click="2">
 
-<div class="absolute top-80 -left-10 px-40 text-center">
+## Intended Audience
 
-Let's learn more about how the use of precise mathematical terms and concepts
-helps to effectively communicate and perform Python programming tasks! 🚀
+> What are the **benefits** and **challenges** associated with using type annotations
+> inside of Python program? Will they help me be a better Python programmer?
+
+</div>
+
+<div v-click="3">
+
+<div class="flex row">
+
+<uim-rocket class="text-6xl ml-9 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Let's explore type annotations in Python programs!
+</div>
+
+</div>
 
 </div>
 
 ---
+
+# Python Program without Annotations
+
+```python
+def extract_urls(repos_dataframe: pandas.DataFrame)
+    -> List[Union[str, Any]]:
+    """Extract a list of urls."""
+    url_column_list = []
+    if "Url" in repos_dataframe.columns:
+        url_column_series = 
+         repos_dataframe[constants.data.Url]
+        if url_column_series is not None:
+            url_column_list = url_column_series.tolist()
+    return list(url_column_list)
+```
+
+<v-clicks>
+
+<div class="absolute top-100 text-5xl font-extrabold bold-text">
+
+<p class = "bold">
+What is the purpose of <code>f"The message is: {message}"</code> ?
+</p>
+
+</div>
+
+</v-clicks>
+
 
 # Hello World with Highlighting
 
