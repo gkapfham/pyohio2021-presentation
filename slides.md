@@ -63,7 +63,7 @@ def start(t: Talk) -> List[Fun, Info]:
 
 <br>
 
-<div v-click="1">
+<div v-click>
 
 ## Key questions
 
@@ -74,7 +74,7 @@ def start(t: Talk) -> List[Fun, Info]:
 
 <br>
 
-<div v-click="2">
+<div v-click>
 
 ## Intended Audience
 
@@ -83,7 +83,7 @@ def start(t: Talk) -> List[Fun, Info]:
 
 </div>
 
-<div v-click="3">
+<div v-click>
 
 <div class="flex row">
 
@@ -99,14 +99,14 @@ Let's explore type annotations in Python programs!
 
 ---
 
-# Python Program without Annotations
+# Python Program with Annotations
 
 <style>
 </style>
 
 <div class="-ml-9">
 
-```python
+```python {all|1|3|4-5|6-7|8|all}
 def extract_urls(df: pandas.DataFrame) -> List[str]:
     """Extract a list of urls."""
     urls = []
@@ -131,9 +131,46 @@ What is the purpose of <code>df: pandas.DataFrame</code> ?
 How does <code>List[str]</code> describe output of <code>extract_urls</code> ?
 </p>
 
+</v-clicks>
+
+---
+
+<v-clicks>
+
+<div class="flex row">
+
+<uim-exclamation-triangle class="text-8xl ml-9 mt-8 text-orange-600" />
+
+<div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
+Wait, isn't this <em>more</em> complicated?
+</div>
+
+</div>
+
+<div class="flex row">
+
+<uim-repeat class="text-8xl ml-9 mt-8 text-orange-600" />
+
+<div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
+Do type annotations have <em>any</em> benefits?
+</div>
+
+</div>
+
+<div class="flex row">
+
+<uim-layers-alt class="text-8xl ml-9 mt-8 text-orange-600" />
+
+<div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
+What are the trade-offs of type annotations?
+</div>
+
+</div>
 
 </v-clicks>
 
+---
+class: center
 ---
 
 # Hello World with Highlighting
