@@ -3,11 +3,15 @@
   @apply h-full grid;
 
   h1 {
-    @apply text-7xl leading-20 font-bold text-dark-100;
+    @apply text-6xl -my-2 leading-20 font-bold text-dark-100 text-orange-600;
   }
 
   h2 {
-    @apply text-3xl leading-20 font-bold text-dark-100;
+    @apply text-4xl leading-20 font-bold text-dark-100;
+  }
+
+  h3 {
+    @apply text-3xl m-2 font-bold text-dark-100;
   }
 
   h1 + p {
