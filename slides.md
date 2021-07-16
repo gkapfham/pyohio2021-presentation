@@ -168,3 +168,37 @@ What are the trade-offs of type annotations?
 </div>
 
 </v-clicks>
+
+---
+
+
+<div class="ml-8 grid grid-cols-2 gap-19">
+<div>
+
+<v-click>
+
+# Challenges
+
+- *Readability* : function signatures are more difficult to read
+- *Productivity* : programmer often must add type annotations
+- *Complexity* : programs use many new classes and types
+
+</v-click>
+
+</div>
+
+<div>
+
+<v-click>
+
+# Benefits
+
+- *Fail-fast* : quickly catch errors before running Python programs
+- *Tooling* : text editors signal problems to programmers
+- *Understanding* : developers understand the structure of data
+
+</v-click>
+
+</div>
+</div>
+
