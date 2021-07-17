@@ -475,4 +475,58 @@ class DebugLevel(str, Enum):
     CRITICAL = constants.logging.Critical
 ```
 
+---
+
+## Command-Line Interface
+
+<style>
+  h2 {
+    font-size: 36px;
+    @apply text-orange-600 mb-4;
+  }
+  li {
+  font-size: 28px;
+  margin-bottom: 5px;
+  }
+</style>
+
+<div class="border rounded-2xl border-gray-600 bg-true-gray-300 p-5">
+
+<pre>
+Usage: workknow download [OPTIONS] REPO_URLS...
+  Download the GitHub Action workflow history of repositories in URL
+  list and CSV file.
+Arguments:
+  REPO_URLS...  [required]
+Options:
+  --repos-csv-file PATH
+  --results-dir PATH
+  --env-file PATH
+  --peek / --no-peek              [default: False]
+  --save / --no-save              [default: False]
+  --debug-level [DEBUG|INFO|WARNING|ERROR|CRITICAL]
+                                  [default: ERROR]
+  --help                          Show this message and exit.
+</pre>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-rocket class="text-9xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-11 ml-4">
+
+- Typer automatically generates all menus
+- Typer converts all arguments to the correct type
+- Typer performs error checking on all arguments
+
+</div>
+
+</div>
+
+</div>
+
 [comment]: <> ( }}} )
