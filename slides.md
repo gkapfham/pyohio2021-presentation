@@ -97,6 +97,42 @@ Let's explore type annotations in Python programs!
 
 ---
 
+# Python Program without Annotations
+
+<style>
+</style>
+
+<div class="-ml-9">
+
+```python {all|1|3|4-5|6-7|8|all}
+def extract_urls(df):
+    """Extract a list of urls."""
+    urls = []
+    if "Url" in df.columns:
+        urlc = df["Url"]
+        if urlc is not None:
+            urls = urlc.tolist()
+    return urls
+```
+
+</div>
+
+<br>
+
+<v-clicks>
+
+<p class = "bold">
+What is the type of <code>df</code> ? The terrible docstring does not say!
+</p>
+
+<p class = "bold">
+What is action of <code>return urls</code> ?
+</p>
+
+</v-clicks>
+
+---
+
 # Python Program with Annotations
 
 <style>
