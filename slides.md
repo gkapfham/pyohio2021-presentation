@@ -254,3 +254,61 @@ Difference between linting and type checking
 
 </div>
 
+---
+
+<div class="ml-8 grid grid-cols-2 gap-19">
+<div>
+
+# Challenges
+
+<style>
+  li {
+  font-size: 22px;
+  margin-bottom: 10px;
+  }
+</style>
+
+- *Readability* : function signatures are more difficult to read
+- *Productivity* : programmer often must add type annotations
+- *Complexity* : programs use many new classes and types
+
+</div>
+
+<div>
+
+# Benefits
+
+- *Fail-fast* : quickly catch errors before running Python programs
+- *Tooling* : text editors signal problems to programmers
+- *Understanding* : developers understand the structure of data
+
+</div>
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-visual-studio class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Pyright language server in VS Code or Neovim
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-grid class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Mypy static type checker in terminal or editor
+</div>
+
+</div>
+
+</div>
