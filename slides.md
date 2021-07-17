@@ -481,12 +481,12 @@ class DebugLevel(str, Enum):
 
 <style>
   h2 {
-    font-size: 36px;
+    font-size: 42px;
     @apply text-orange-600 mb-4;
   }
   li {
   font-size: 28px;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
   }
 </style>
 
@@ -516,11 +516,12 @@ Options:
 
 <uim-rocket class="text-9xl ml-5 mt-5 text-blue-600" />
 
-<div class="text-3xl font-bold mt-11 ml-4">
+<div class="text-3xl font-bold mt-8 ml-4">
 
-- Typer automatically generates all menus
-- Typer converts all arguments to the correct type
-- Typer performs error checking on all arguments
+- With type annotations, Typer can:
+  - automatically generates all menus
+  - performs error checking on all arguments
+  - converts all arguments to the correct type
 
 </div>
 
