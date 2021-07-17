@@ -133,6 +133,45 @@ What is action of <code>return urls</code> ?
 
 ---
 
+# Python Program without Annotations
+
+<style>
+</style>
+
+<div class="-ml-9">
+
+```python {all|1|3|4-5|6-7|8|all}
+def extract_urls(df):
+    """Extract a list of urls."""
+    urls = []
+    if "Url" in df.columns:
+        urlc = df["Url"]
+        if urlc is not None:
+            urls = urlc.tolist()
+    return urls
+```
+
+</div>
+
+<br>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-refresh class="text-6xl ml-4 mt-4 text-orange-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+What happens if the program becomes more complex?
+</div>
+
+</div>
+
+</div>
+
+
+---
+
 # Python Program with Annotations
 
 <style>
