@@ -475,6 +475,8 @@ class DebugLevel(str, Enum):
     CRITICAL = constants.logging.Critical
 ```
 
+[comment]: <> ( }}} )
+
 ---
 
 ## Command-Line Interface
@@ -485,8 +487,9 @@ class DebugLevel(str, Enum):
     @apply text-orange-600 mb-4;
   }
   li {
-  font-size: 28px;
-  margin-bottom: 9px;
+    font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 9px;
   }
 </style>
 
@@ -516,7 +519,7 @@ Options:
 
 <uim-rocket class="text-9xl ml-5 mt-5 text-blue-600" />
 
-<div class="text-3xl font-bold mt-8 ml-4">
+<div class="text-3xl font-bold mt-7 ml-4">
 
 - Using type annotations, Typer can:
   - automatically generates all menus
@@ -528,5 +531,28 @@ Options:
 </div>
 
 </div>
+
+[comment]: <> ( }}} )
+
+---
+
+[comment]: <> ( {{{ )
+
+# Pyright Uses Annotations
+
+<br>
+
+```python
+def create_results_zip_file(
+    results_dir: Path, results_files: List[str]
+ ) -> None:
+    """Make a .zip file of all results."""
+    with zipfile.ZipFile(
+        "results/All-WorkKnow-Results.zip",
+        "w",
+    ) as results_zip_file:
+        for results_file in results_files:
+            results_zip_file.write(results_file)
+```
 
 [comment]: <> ( }}} )
