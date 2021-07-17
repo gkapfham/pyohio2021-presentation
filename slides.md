@@ -126,7 +126,7 @@ What is the type of <code>df</code> ? The terrible docstring does not say!
 </p>
 
 <p class = "bold">
-What is action of <code>return urls</code> ?
+What is action of <code>return urls</code> in this function?
 </p>
 
 </v-clicks>
@@ -416,4 +416,3 @@ AnalyzeActions/WorkKnow
 </v-clicks>
 
 [comment]: <> ( }}} )
-
