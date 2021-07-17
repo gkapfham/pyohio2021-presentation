@@ -423,10 +423,7 @@ AnalyzeActions/WorkKnow
 
 # Command-Line Interface with Typer
 
-<style>
-</style>
-
-<div class="-ml-0 my-2">
+<div class="ml-2 my-2">
 
 ```python {all|1|2|3-4|5|6-8|9|10-11|all}
 import python
@@ -554,7 +551,74 @@ def create_results_zip_file(
         "w",
     ) as results_zip_file:
         for results_file in results_files:
-            results_zip_file.write(results_file)
+            results_zip_file.write(results_files)
 ```
+
+[comment]: <> ( }}} )
+
+---
+
+[comment]: <> ( {{{ )
+
+<v-click>
+
+## Pyright Feedback in VS Code
+
+<style>
+  h2 {
+    font-size: 42px;
+    @apply text-orange-600 mb-4;
+  }
+  li {
+    font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 9px;
+    }
+  pre {
+    @apply text-3xl
+  }
+</style>
+
+<div class="border rounded-2xl border-gray-600 bg-true-gray-300 p-5 mb-6">
+
+<pre>
+Argument of type "List[str]" cannot be
+assigned to parameter "filename" of
+type "StrPath" in function "write"
+</pre>
+
+</div>
+
+</v-click>
+
+<v-click>
+
+```python
+with zipfile.ZipFile(
+    "results/All-WorkKnow-Results.zip",
+    "w",
+) as results_zip_file:
+    for results_file in results_files:
+        results_zip_file.write(results_files)
+```
+
+</v-click>
+
+<v-click>
+
+<mdi-bug class="text-8xl absolute top-99 left-215 text-orange-600" />
+<mdi-arrow-up class="text-6xl absolute top-118 left-175 text-orange-600" />
+
+</v-click>
+
+<v-click >
+
+<div class="text-8xl ml-100 mt-5">
+
+<code>results_file</code>
+
+</div>
+
+</v-click>
 
 [comment]: <> ( }}} )
