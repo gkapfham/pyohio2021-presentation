@@ -494,8 +494,7 @@ class DebugLevel(str, Enum):
 
 <pre>
 Usage: workknow download [OPTIONS] REPO_URLS...
-  Download the GitHub Action workflow history of repositories in URL
-  list and CSV file.
+  Download the GitHub Action workflow history of repositories.
 Arguments:
   REPO_URLS...  [required]
 Options:
@@ -515,7 +514,7 @@ Options:
 
 <div class="flex row">
 
-<uim-rocket class="text-9xl ml-8 mt-5 text-blue-600" />
+<uim-rocket class="text-9xl ml-5 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-11 ml-4">
 
