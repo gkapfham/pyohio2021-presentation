@@ -179,7 +179,7 @@ What happens if the program becomes more complex?
 
 <div class="-ml-9">
 
-```python {all|1|3|4-5|6-7|8|all}
+```python {all|1}
 def extract_urls(df: pandas.DataFrame) -> List[str]:
     """Extract a list of urls."""
     urls = []
@@ -206,12 +206,10 @@ How does <code>List[str]</code> describe output of <code>extract_urls</code> ?
 
 </v-clicks>
 
-
 [comment]: <> ( {{{ )
 
 ---
 
-<v-clicks>
 
 <div class="flex row">
 
@@ -222,6 +220,8 @@ Wait, isn't this <em>more</em> complicated?
 </div>
 
 </div>
+
+<v-clicks>
 
 <div class="flex row">
 
@@ -416,3 +416,73 @@ AnalyzeActions/WorkKnow
 </v-clicks>
 
 [comment]: <> ( }}} )
+
+---
+
+[comment]: <> ( {{{ )
+
+# Command-Line Interface with Typer
+
+<style>
+</style>
+
+<div class="-ml-0 my-2">
+
+```python {all|1|2|3-4|5|6-8|9|10-11|all}
+import typer
+cli = typer.Typer()
+@cli.command()
+def download(
+    repo_urls: List[str],
+    repos_csv_file: Path = typer.Option(None),
+    results_dir: Path = typer.Option(None),
+    env_file: Path = typer.Option(None),
+    save: bool = typer.Option(False),
+    debug_level: debug.DebugLevel =
+         debug.DebugLevel.ERROR,
+):
+```
+
+</div>
+
+[comment]: <> ( }}} )
+
+---
+
+[comment]: <> ( {{{ )
+
+# Defining the <code>DebugLevel</code> Enumeration
+
+<br>
+
+<div class="-ml-0 my-2">
+
+```python {all|1|3|4-5|6-7|8|all}
+class DebugLevel(str, Enum):
+    """The predefined levels for debugging."""
+
+    DEBUG = constants.logging.Debug
+    INFO = constants.logging.Info
+    WARNING = constants.logging.Warning
+    ERROR = constants.logging.Error
+    CRITICAL = constants.logging.Critical
+```
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-rocket class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Typer automatically makes the console interface!
+</div>
+
+</div>
+
+</div>
+
+[comment]: <> ( }}} )
+
