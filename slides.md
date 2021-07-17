@@ -206,6 +206,9 @@ How does <code>List[str]</code> describe output of <code>extract_urls</code> ?
 
 </v-clicks>
 
+
+[comment]: <> ( {{{ )
+
 ---
 
 <v-clicks>
@@ -241,6 +244,8 @@ What are the trade-offs of type annotations?
 </div>
 
 </v-clicks>
+
+[comment]: <> ( }}} )
 
 ---
 
