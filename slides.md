@@ -518,7 +518,7 @@ Options:
 
 <div class="text-3xl font-bold mt-8 ml-4">
 
-- With type annotations, Typer can:
+- Using type annotations, Typer can:
   - automatically generates all menus
   - performs error checking on all arguments
   - converts all arguments to the correct type
