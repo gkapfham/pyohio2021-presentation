@@ -479,6 +479,8 @@ class DebugLevel(str, Enum):
 
 ---
 
+[comment]: <> ( {{{ )
+
 ## Command-Line Interface
 
 <style>
