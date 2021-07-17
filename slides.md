@@ -50,8 +50,6 @@ def start(t: Talk) -> List[Fun, Info]:
 
 ---
 
----
-
 # <em>Okay</em>, what will I learn?
 
 <style>
@@ -234,20 +232,6 @@ Software tools for static or dynamic analysis
 Difference between linting and type checking
 </div>
 
-</div>
-
-</div>
-
-</div>
-
-<div v-click="7">
-
-<div class="flex row">
-
-<uim-microscope class="text-6xl ml-8 mt-5 text-blue-600" />
-
-<div class="text-3xl font-bold mt-8 ml-4">
-Difference between linting and type checking
 </div>
 
 </div>
