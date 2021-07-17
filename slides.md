@@ -171,7 +171,6 @@ What are the trade-offs of type annotations?
 
 ---
 
-
 <div class="ml-8 grid grid-cols-2 gap-19">
 <div>
 
@@ -207,5 +206,51 @@ What are the trade-offs of type annotations?
 </v-click>
 
 </div>
+</div>
+
+<div v-click-hide="6">
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-stethoscope class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Software tools for static or dynamic analysis
+</div>
+
+</div>
+
+</div>
+
+<div v-click>
+
+<div class="flex row">
+
+<uim-microscope class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Difference between linting and type checking
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div v-click="7">
+
+<div class="flex row">
+
+<uim-microscope class="text-6xl ml-8 mt-5 text-blue-600" />
+
+<div class="text-3xl font-bold mt-8 ml-4">
+Difference between linting and type checking
+</div>
+
+</div>
+
 </div>
 
