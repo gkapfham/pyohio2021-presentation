@@ -102,7 +102,7 @@ Let's explore type annotations in Python programs!
 <style>
 </style>
 
-<div class="-ml-9">
+<div class="-ml-0">
 
 ```python {all|1|3|4-5|6-7|8|all}
 def extract_urls(df):
@@ -126,7 +126,7 @@ What is the type of <code>df</code> ? The terrible docstring does not say!
 </p>
 
 <p class = "bold">
-What is action of <code>return urls</code> in this function?
+What is behavior of <code>return urls</code> in this function?
 </p>
 
 </v-clicks>
@@ -138,7 +138,7 @@ What is action of <code>return urls</code> in this function?
 <style>
 </style>
 
-<div class="-ml-9">
+<div class="-ml-0">
 
 ```python {all|1|3|4-5|6-7|8|all}
 def extract_urls(df):
