@@ -66,7 +66,7 @@ def start(t: Talk) -> List[Fun, Info]:
 ## Key Questions
 
 > What are the **benefits** and **challenges** associated with using type annotations
-> inside of Python program? Will they help me be a better Python programmer?
+> inside of Python program? Will types make me be a better programmer?
 
 </div>
 
@@ -76,8 +76,8 @@ def start(t: Talk) -> List[Fun, Info]:
 
 ## Intended Audience
 
-> What are the **benefits** and **challenges** associated with using type annotations
-> inside of Python program? Will they help me be a better Python programmer?
+> An **adventuresome** Python programmer who wants to explore how a both new
+> **paradigm** and software **tools** can improve their development skills!
 
 </div>
 
@@ -376,3 +376,44 @@ Mypy static type checker in terminal or editor
 </div>
 
 </div>
+
+[comment]: <> ( {{{ )
+
+---
+
+<v-clicks>
+
+<div class="flex row">
+
+<uim-layer-group class="text-8xl ml-9 mt-8 text-orange-600" />
+
+<div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
+Easy command-line interface with Typer
+</div>
+
+</div>
+
+<div class="flex row">
+
+<uim-line class="text-8xl ml-9 mt-8 text-orange-600" />
+
+<div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
+Quickly find a defect that crashes a program
+</div>
+
+</div>
+
+<div class="flex row">
+
+<uim-github class="text-8xl ml-9 mt-8 text-blue-600" />
+
+<div class="text-5xl text-true-gray-600 font-bold mt-15 ml-4">
+AnalyzeActions/WorkKnow
+</div>
+
+</div>
+
+</v-clicks>
+
+[comment]: <> ( }}} )
+
