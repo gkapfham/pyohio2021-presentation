@@ -492,7 +492,7 @@ class DebugLevel(str, Enum):
   }
 </style>
 
-<div class="border rounded-2xl border-gray-600 bg-true-gray-300 p-5">
+<div class="border-2 rounded-2xl border-gray-700 bg-true-gray-300 p-5">
 
 <pre>
 Usage: workknow download [OPTIONS] REPO_URLS...
@@ -521,9 +521,9 @@ Options:
 <div class="text-3xl font-bold mt-7 ml-4">
 
 - Using type annotations, Typer can:
-  - automatically generates all menus
-  - performs error checking on all arguments
-  - converts all arguments to the correct type
+  - automatically generate all menus
+  - perform error checking on all arguments
+  - convertall arguments to the correct type
 
 </div>
 
@@ -537,11 +537,9 @@ Options:
 
 [comment]: <> ( {{{ )
 
-# Pyright Uses Annotations
+# Defect Detection with Pyright
 
-<br>
-
-```python
+```python {all|1-3|5-8|9-10|all}
 def create_results_zip_file(
     results_dir: Path, results_files: List[str]
  ) -> None:
@@ -553,6 +551,13 @@ def create_results_zip_file(
         for results_file in results_files:
             results_zip_file.write(results_files)
 ```
+
+<v-click>
+
+<mdi-message-question-outline class="text-8xl absolute top-108 left-8 text-orange-600" />
+<mdi-bug class="text-8xl absolute top-105 left-34 text-orange-600" />
+
+</v-click>
 
 [comment]: <> ( }}} )
 
@@ -579,7 +584,7 @@ def create_results_zip_file(
   }
 </style>
 
-<div class="border rounded-2xl border-gray-600 bg-true-gray-300 p-5 mb-6">
+<div class="border-3 rounded-2xl border-gray-700 bg-true-gray-300 p-5 mb-6">
 
 <pre>
 Argument of type "List[str]" cannot be
@@ -607,6 +612,11 @@ with zipfile.ZipFile(
 <v-click>
 
 <mdi-bug class="text-8xl absolute top-99 left-215 text-orange-600" />
+
+</v-click>
+
+<v-click>
+
 <mdi-arrow-up class="text-6xl absolute top-118 left-175 text-orange-600" />
 
 </v-click>
