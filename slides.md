@@ -140,7 +140,7 @@ What is behavior of <code>return urls</code> in this function?
 
 <div class="-ml-0">
 
-```python {all|1|3|4-5|6-7|8|all}
+```python
 def extract_urls(df):
     """Extract a list of urls."""
     urls = []
@@ -159,7 +159,7 @@ def extract_urls(df):
 
 <div class="flex row">
 
-<uim-refresh class="text-6xl ml-4 mt-4 text-orange-600" />
+<uim-refresh class="text-6xl ml-2 mt-4 text-orange-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
 What happens if the program becomes more complex?
@@ -216,7 +216,7 @@ How does <code>List[str]</code> describe output of <code>extract_urls</code> ?
 <uim-exclamation-triangle class="text-8xl ml-9 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
-Wait, isn't this <em>more</em> complicated?
+Wait, isn't this more complicated?
 </div>
 
 </div>
@@ -228,7 +228,7 @@ Wait, isn't this <em>more</em> complicated?
 <uim-repeat class="text-8xl ml-9 mt-8 text-orange-600" />
 
 <div class="text-6xl text-true-gray-600 font-bold mt-8 ml-4">
-Do type annotations have <em>any</em> benefits?
+Do type annotations have any benefits?
 </div>
 
 </div>
@@ -429,7 +429,7 @@ AnalyzeActions/WorkKnow
 <div class="-ml-0 my-2">
 
 ```python {all|1|2|3-4|5|6-8|9|10-11|all}
-import typer
+import python
 cli = typer.Typer()
 @cli.command()
 def download(
@@ -455,9 +455,16 @@ def download(
 
 <br>
 
-<div class="-ml-0 my-2">
+```python {all|0}
+from enum import Enum
+```
 
-```python {all|1|3|4-5|6-7|8|all}
+```python {0|all|0}
+from workknow import constants
+```
+
+```python {all|1-2|4-9|all}
+
 class DebugLevel(str, Enum):
     """The predefined levels for debugging."""
 
@@ -468,21 +475,4 @@ class DebugLevel(str, Enum):
     CRITICAL = constants.logging.Critical
 ```
 
-</div>
-
-<div v-click>
-
-<div class="flex row">
-
-<uim-rocket class="text-6xl ml-8 mt-5 text-blue-600" />
-
-<div class="text-3xl font-bold mt-8 ml-4">
-Typer automatically makes the console interface!
-</div>
-
-</div>
-
-</div>
-
 [comment]: <> ( }}} )
-
