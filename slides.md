@@ -593,7 +593,7 @@ Okay, let's recap where we're at in this talk!
 
 I acknowledge that it has taken time for me to understand better how to
 interpret the output of these tools -- and to know when to ignore their output!
--- I've seen evidence that they help me write better Python programs.
+However, I've seen evidence that they help me write better Python programs.
 
 In the remainder of the talk I want to highlight some of my experiences in
 building a Python program with type annotations. Specifically, I want to show
@@ -798,11 +798,18 @@ Options:
 
 </div>
 
-[comment]: <> ( }}} )
+<!--
+
+What you see on the screen now is what would appear in your terminal window if
+you typed "workknow download --help". It is important to stress that:
+
+**Transition to the bottom section of the slide.**
+
+- Using type annotations
+
+-->
 
 ---
-
-[comment]: <> ( {{{ )
 
 # Defect Detection with Pyright
 
