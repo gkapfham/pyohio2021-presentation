@@ -581,6 +581,27 @@ Mypy static type checker in terminal or editor
 - **Using text editors that integrate with language servers**
 - **Using the mypy type checker in your terminal window of text editor**
 
+In my experience, Pyright and mypy are exceptional tools that have detected many
+defects in my code before I ran either the test suite or the program itself. For
+my recent Python projects, I setup Pyright to run asynchronously in Neovim and
+highlight problems as soon as they are detected. I also run mypy in my terminal
+window and in GitHub actions whenever I push a commit to a branch.
+
+Okay, let's recap where we're at in this talk!
+
+**Full screen video**
+
+I acknowledge that it has taken time for me to understand better how to
+interpret the output of these tools -- and to know when to ignore their output!
+-- I've seen evidence that they help me write better Python programs.
+
+In the remainder of the talk I want to highlight some of my experiences in
+building a Python program with type annotations. Specifically, I want to show
+you how using type annotations can give you features "nearly for free" and help
+you to find bugs very quickly. If you check the notes for this video on YouTube
+you will see references to the project I built. Check out the source code that I
+wrote and share your feedback on either YouTube or GitHub!
+
 -->
 
 ---
