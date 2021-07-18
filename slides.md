@@ -1020,7 +1020,17 @@ Type checkers automatically find bugs
 
 <!--
 
-This is a note
+So, what have I introduced in this talk?
+
+First, I showed you how a programmer can define type annotations in their Python
+program. Although these annotations take time to add and can make a program
+appear more complex, they have a myriad of benefits!
+
+For instance, when you use the Typer package it will automatically create a
+robust and well-documented command line interface! Make sure that you search
+for Typer and read its the exceptional documentation.
+
+The talk also showed how typer checkers can automatically find bugs.
 
 -->
 
@@ -1056,16 +1066,6 @@ AnalyzeActions/WorkKnow
 
 <div class="flex row">
 
-<uim-github class="text-7xl ml-0 mt-8 text-blue-600" />
-
-<div class="text-4xl font-medium mt-12 ml-4">
-gkapfham/pyohio2021-presentation
-</div>
-
-</div>
-
-<div class="flex row">
-
 <uim-comment-dots class="text-7xl ml-0 mt-8 text-blue-600" />
 
 <div class="text-4xl font-medium mt-12 ml-4">
@@ -1074,11 +1074,34 @@ https://www.gregorykapfhammer.com/
 
 </div>
 
+<div class="flex row">
+
+<uim-github class="text-7xl ml-0 mt-8 text-blue-600" />
+
+<div class="text-4xl font-medium mt-12 ml-4">
+gkapfham/pyohio2021-presentation
+</div>
+
+</div>
+
 </v-clicks>
 
 <!--
 
-This is a note
+I'm hoping that you are now saying to yourself that, yes, type annotations in
+Python are tremendously informative!
+
+Whether or not you are now convinced of this fact, I hope that you will try them
+soon. If you want see a Python program that is using type annotations, check out
+WorkKnow's GitHub repository.
+
+Once you have formed your own opinion about type annotations, I hope that you
+will get in touch with me through my web site and leave a comment on YouTube.
+
+Oh, one last thing! Are you interested in seeing the source code for my slides?
+If so, please check the GitHub repository for their source code!
+
+Okay, thanks for your attention! Now, get out there and write some Python code
+with type annotations!
 
 -->
-
