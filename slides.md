@@ -205,7 +205,7 @@ What is behavior of <code>return urls</code> in this function?
 Here is an example of a Python function that does not have any type annotations.
 You have probably seen many functions like this when you are reading online
 tutorials. This one is called extract_urls and it extracts all of the URLs from
-a column of a Pandas DataFrame called df.
+a column of a variable called df.
 
 Let's walk through each line in this function:
 
@@ -226,11 +226,6 @@ Specifically, what is the type of data that this function returns? In this
 specific case, we can scan the rest of the function's source code to note that
 urls is a variable of type list. However, this version of the function
 does not reveal the type of the data stored in the list!
-
-Moreover, it is important to note that if this function was a part of a more
-complex Python program then it would become more difficult for a programmer to
-have a full-featured understanding of the inputs, outputs, and behavior of
-extract_urls.
 
 -->
 
@@ -283,7 +278,8 @@ more complex Python program then it would become more difficult to have a
 full-featured understanding of the inputs, outputs, and behavior of
 extract_urls. For instance, if the function had more lines of code it would be
 more difficult for a programmer to see that urls is a list. And, remember,
-discovering that it is a list would not reveal the type of data the list stored!
+discovering that it is a list would not reveal the type of data that the list
+stores!
 
 -->
 
