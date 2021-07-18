@@ -803,9 +803,29 @@ Options:
 What you see on the screen now is what would appear in your terminal window if
 you typed "workknow download --help". It is important to stress that:
 
-**Transition to the bottom section of the slide.**
+<br>
 
-- Using type annotations
+**Transition to and explain the bottom list on the slide.**
+
+- Using type annotations, Typer can automatically generate all of the menus,
+like the one you see here.
+
+- Since Typer know the type of each command-line argument it can perform error
+checking to make sure that a person definitely passes, for instance, a string or
+a boolean in the right order and for the right parameter. If you have ever built
+a command-line interface using argparse then you probably remember how long it
+took you to write the error-prone code that verifies the arguments. Now, as long
+as you add the type of each variable, Typer can do all of this work for you!
+
+- Amazingly, Typer can also convert all of the strings that a person passes into
+the program on the command-line into the correct type for the program! For
+instance, if the program accepts a string that points to the directory in which
+WorkKnow should store the data, then Typer will convert that string to a pathlib
+Path without any effort on the part of the programmer! Fantastic!
+
+- Finally, did you notice how Typer will only allow a person to specify specific
+values for the debugging level command-line argument. Again, this feature is due
+to the fact that source code stipulated that it was of the type DebugLevel.
 
 -->
 
