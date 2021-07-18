@@ -158,14 +158,13 @@ you are an programmer who has used types before, I hope that your adventuresome
 spirit will convince you to stick around since I'm hopeful will learn
 something new in the next ten minutes.
 
+Okay, let's explore some type annotations in Python programs!
+
 -->
 
 ---
 
 # Python Program without Annotations
-
-<style>
-</style>
 
 <div class="-ml-0">
 
