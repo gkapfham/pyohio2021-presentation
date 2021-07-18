@@ -274,6 +274,10 @@ What happens if the program becomes more complex?
 
 <!--
 
+*Continued from previous slide*
+
+<br>
+
 With that said, it is important to note that if this function was a part of a
 more complex Python program then it would become more difficult to have a
 full-featured understanding of the inputs, outputs, and behavior of
@@ -409,6 +413,7 @@ type annotations to our Python programs!
 ---
 
 <div class="ml-8 grid grid-cols-2 gap-19">
+
 <div>
 
 <v-click>
@@ -477,6 +482,39 @@ Difference between linting and type checking
 
 </div>
 
+<!--
+
+Let's first address the challenges associated with regularly applying type
+annotations to the functions in a Python program:
+
+**Read the list of challenges**
+
+In the context of program complexity it's worth noting that Python programmers
+who use types will now need to become familiar with the typing package and the
+types available from it, like List, Union, Dict, and others. When I first
+starting adding types to my programs I spent a lot of time reading the
+documentation for the typing package until I could comfortably create constructs
+like type aliases and annotations for complex nested data structures.
+
+Was it challenging? Yes, it really was! Was it worth it? Yes, I think so!
+
+Let me tell you about some of the benefits that accrue from adding type
+annotations to your Python program.
+
+**Read the list of benefits**
+
+One thing that I really appreciate about type annotations is that it made me
+think very carefully about my data, especially when I was dealing with nested
+structures like dictionaries that contains lists of dictionaries.
+
+But some of these benefits will only be evident if you use the right tools.
+Let's investigate the landscape of tool support before moving on!
+
+- **Static versus dynamic analysis**
+- **Linting versus type checking**
+
+-->
+
 ---
 
 <div class="ml-8 grid grid-cols-2 gap-19">
@@ -536,7 +574,14 @@ Mypy static type checker in terminal or editor
 
 </div>
 
-[comment]: <> ( {{{ )
+<!--
+
+*Continued from previous slide*
+
+- **Using text editors that integrate with language servers**
+- **Using the mypy type checker in your terminal window of text editor**
+
+-->
 
 ---
 
