@@ -68,13 +68,30 @@ Do you want to learn more about type annotations in Python? Are you interested
 in learning to use cool new tools that improve programmer productivity? You
 are? Great! Let's dive into the presentation!
 
-The title of my talk is "Type Annotations in Python: Terribly Intimidating or
-Tremendously Informative?" and it was originally given at PyOhio 2021.l
+The title of this talk is "Type Annotations in Python: Terribly Intimidating or
+Tremendously Informative?" and it was originally given at PyOhio 2021.
+
+In it I will share my experiences with using type annotations in a Python
+project that I created recently to download information about the run of GitHub
+Action workflows from GitHub's REST API.
+
+But first, check out the `start` function at the bottom of this slide.
+
+**Explain**:
+
+- The talk parameter
+- That Union[Fun, Info] means that the talk could either be fun or
+informative
+- That List[Fun, Into] suggests that the talk could be both fun and informative
+
+Let's pick the second option in hopes that this talk is both fun and informative
+for you!
+
 -->
 
 ---
 
-# <em>Okay</em>, what will I learn?
+# <em>Okay</em>, what is this about?
 
 <style>
   h2 {
@@ -118,6 +135,12 @@ Let's explore type annotations in Python programs!
 </div>
 
 </div>
+
+<!--
+
+Example
+
+-->
 
 ---
 
