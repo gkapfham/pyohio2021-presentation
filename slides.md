@@ -402,106 +402,6 @@ type annotations to our Python programs!
 ---
 
 <div class="ml-8 grid grid-cols-2 gap-19">
-
-<div>
-
-<v-click>
-
-# Challenges
-
-<style>
-  li {
-  font-size: 22px;
-  margin-bottom: 10px;
-  }
-</style>
-
-- *Readability* : function signatures are more difficult to read
-- *Productivity* : programmer often must add type annotations
-- *Complexity* : programs use many new classes and types
-
-</v-click>
-
-</div>
-
-<div>
-
-<v-click>
-
-# Benefits
-
-- *Fail-fast* : quickly catch errors before running Python programs
-- *Tooling* : text editors signal problems to programmers
-- *Understanding* : developers understand the structure of data
-
-</v-click>
-
-</div>
-</div>
-
-<div v-click-hide="6">
-
-<div v-click>
-
-<div class="flex row">
-
-<uim-stethoscope class="text-6xl ml-8 mt-5 text-blue-600" />
-
-<div class="text-3xl font-bold mt-8 ml-4">
-Software tools for static or dynamic analysis
-</div>
-
-</div>
-
-</div>
-
-<div v-click>
-
-<div class="flex row">
-
-<uim-microscope class="text-6xl ml-8 mt-5 text-blue-600" />
-
-<div class="text-3xl font-bold mt-8 ml-4">
-Difference between linting and type checking
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!--
-
-Let's first address the challenges associated with regularly applying type
-annotations to the functions in a Python program:
-
-**[[Read the list of challenges]]**
-
-Let me also tell you about some of the benefits that accrue from adding type
-annotations to your Python program.
-
-**[[Read the list of benefits]]**
-
-Some of these benefits will only be evident if you use the right tools.
-Let's investigate the landscape of tool support before moving on!
-
-**Static versus dynamic analysis**
-
-- Dynamic analysis involves running the program, like you might do during
-testing
-- Instead of running the program, static analysis analyzes its source code
-
-**Linting versus type checking**
-
-- A linter looks for potentially poor patterns in source code
-- A type checker determines if variables are storing data of the right type
-
--->
-
----
-
-<div class="ml-8 grid grid-cols-2 gap-19">
 <div>
 
 # Challenges
@@ -537,7 +437,7 @@ testing
 <uim-visual-studio class="text-6xl ml-8 mt-5 text-blue-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
-Pyright language server in VS Code or Neovim
+Pyright language server in VS Code and Neovim
 </div>
 
 </div>
@@ -560,15 +460,29 @@ Mypy static type checker in terminal or editor
 
 <!--
 
-*Continued from previous slide*
+Let's first address the challenges associated with regularly applying type
+annotations to the functions in a Python program:
+
+**[[Read the list of challenges]]**
+
+Let me also tell you about some of the benefits that accrue from adding type
+annotations to your Python program.
+
+**[[Read the list of benefits]]**
+
+Some of these benefits will only be evident if you use the right tools.
+Let's investigate the landscape of tool support before moving on!
 
 - **Using text editors that integrate with language servers**
 - **Using the mypy type checker in your terminal window of text editor**
 
 In my experience, Pyright and mypy are exceptional tools that have detected many
-defects in my code before I ran either the test suite or the program itself. For
-my recent Python projects, I setup Pyright to run asynchronously in Neovim and
-to highlight problems as soon as they are detected. I also run mypy in my
+defects in my code before I ran either the test suite or the program itself.
+
+**CUT IN SHORT VERSION**
+
+For my recent Python projects, I setup Pyright to run asynchronously in Neovim
+and to highlight problems as soon as they are detected. I also run mypy in my
 terminal window and in GitHub actions whenever I push a commit to a branch.
 
 **Full screen video -- CUT IN SHORT VERSION**
