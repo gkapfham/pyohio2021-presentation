@@ -853,11 +853,32 @@ def create_results_zip_file(
 
 </v-click>
 
-[comment]: <> ( }}} )
+<!--
+
+One of WorkKnow's features is that it can create a ZIP file of all the results
+that is saves about the history of GitHub Action workflows for different
+projects. This feature has come in handy when the data that it downloads is too
+large to send to someone on a per-file basis.
+
+After walking through the source code for this function, I have a story to tell
+you about how type annotations helped me to implement it correctly!
+
+**Explain each line of source code in the function.**
+
+When I first wrote this function, I did so in the way that you see right now.
+That leads me to my next question:
+
+- Can you find the bug in this program?
+
+Although I acknowledge that the defect is a small one and that, in fact, I would
+have been able to find it without using type annotations and type checkers, I'm
+delighted to report that pyright found it for me immediately! I appreciate
+pyright because it works asynchronously in the background, pointing out likely problems
+while I focus on the next feature or test that I want to write.
+
+-->
 
 ---
-
-[comment]: <> ( {{{ )
 
 <v-click>
 
