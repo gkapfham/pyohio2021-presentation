@@ -40,7 +40,7 @@ title: Type Annotations in Python
 
 <v-click>
 
-```python {all|1|2|all|2}
+```python {all|1|2|}
 def start(t: Talk) -> Union[Fun, Info]:
 def start(t: Talk) -> List[Fun, Info]:
 ```
@@ -48,16 +48,18 @@ def start(t: Talk) -> List[Fun, Info]:
 </v-click>
 
 <!--
+
 Hello, my name is Gregory Kapfhammer. I'm a computer science professor and a
 software engineer and I have a question: "are you a Python programmer who wants
 to write high quality software? " If you are, then I hope that you will stay
-tuned to this talk! It will reveal how the use of type annotations can make it easier to
-add features to and find bugs in your program.
+tuned to this talk! It will reveal how the use of type annotations can make it
+easier to add features to your program. It will also show how types help to find
+bugs in your Python code.
 
 Type annotations tell both tools and developers about the kind of data stored in
 a variable. If you are like me, then you might have found that these annotations
 are terribly intimidating. However, I kept using type annotations in several of
-my recent Python projects and now I find them tremendously informative!
+my recent Python projects and now I find them to be tremendously informative!
 
 I don't always add type annotations to my programs and, of course, I still get
 confused and make mistakes some times. However, my current view is that
@@ -71,7 +73,7 @@ are? Great! Let's dive into the presentation!
 The title of this talk is "Type Annotations in Python: Terribly Intimidating or
 Tremendously Informative?" and it was originally given at PyOhio 2021.
 
-In it I will share my experiences with using type annotations in a Python
+In it I share my experiences with using type annotations in a Python
 project that I created recently to download information about the run of GitHub
 Action workflows from GitHub's REST API.
 
@@ -147,16 +149,19 @@ First, the talk has two key questions:
 Python programs?
 - Will types make me a better Python programmer?
 
+I will answer both of those questions by highlighting how type annotations
+helped me to recently write some Python functions.
+
 I had you in mind when I was preparing this talk if you are an adventuresome
 Python programmer who wants to explore how type annotations --- and their new
-paradigm for thinking and affiliated software tools --- can improve your
+paradigm for thinking and their affiliated software tools --- can improve your
 development workflow.
 
 Don't be concerned if you have never used types before or if you found them
 confusing the last time you tried to add them to your Python program. And, if
-you are an programmer who has used types before, I hope that your adventuresome
-spirit will convince you to stick around since I'm hopeful will learn
-something new in the next ten minutes.
+you are an programmer who frequently uses type annotations, I hope that your
+adventuresome spirit will convince you to stick around since I'm hopeful that
+you will learn something new in the next ten minutes.
 
 Okay, let's explore some type annotations in Python programs!
 
@@ -194,6 +199,39 @@ What is behavior of <code>return urls</code> in this function?
 </p>
 
 </v-clicks>
+
+<!--
+
+Here is an example of a Python function that does not have any type annotations.
+You have probably seen many functions like this when you are reading online
+tutorials. This one is called extract_urls and it extracts all of the URLs from
+a column of a Pandas DataFrame called df.
+
+Let's walk through each line in this function:
+
+**Explain each highlighted line of the function
+
+Now that we understand the inputs, outputs, and behavior of this function, let's
+ask and answer some questions about it.
+
+- What is the type of the df parameter? Sadly, the terrible docstring for this
+function does not say. If you have programmed with the Pandas package before
+then you might guess that it is a data frame. However, you would have to study
+other parts of the program to be sure!
+
+The second question is:
+
+- What is the behavior of the return urls statement in this function?
+Specifically, what is the type of data that this function returns? In this
+specific case, we can scan the rest of the function's source code to note that
+urls is a variable of type list.
+
+With that said, it is important to note that if this function was a part of a
+more complex Python program then it would become more difficult to have a
+full-featured understanding of the inputs, outputs, and behavior of
+extract_urls.
+
+-->
 
 ---
 
@@ -233,6 +271,14 @@ What happens if the program becomes more complex?
 
 </div>
 
+<!--
+
+With that said, it is important to note that if this function was a part of a
+more complex Python program then it would become more difficult to have a
+full-featured understanding of the inputs, outputs, and behavior of
+extract_urls.
+
+-->
 
 ---
 
