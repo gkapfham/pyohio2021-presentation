@@ -654,9 +654,9 @@ history of your workflow builds on GitHub Actions. WorkKnow uses GitHub's REST
 API to download the history of workflow executions, extracts, parses, and
 summarizes the data and stores the most important results in CSV files.
 
-I'm using WorkKnow because it helps me to gain insights into the trends evident
-in both my GitHub action workflows and the workflows of popular projects using
-GitHub Actions.
+I'm building and using WorkKnow because it helps me to gain insights into the
+trends evident in both my GitHub action workflows and the workflows of popular
+projects that leverage GitHub Actions.
 
 If you would like to try out WorkKnow you can find it in the AnalyzeActions
 organization on GitHub. Even though the tool is in a very early stage of
@@ -699,12 +699,11 @@ interfaces in Python then you should right away! It is awesome!
 Let's review the source code of this code segment to better understand how Typer
 works and how it uses type annotations.
 
-**Review each highlighted line of source code**
+**Review each highlighted line of source code.**
 
 -->
 
 ---
-
 
 # Defining the <code>DebugLevel</code> Enumeration
 
@@ -718,7 +717,7 @@ from enum import Enum
 from workknow import constants
 ```
 
-```python {all|1-2|4-9|all}
+```python {all|1-2|4-9}
 
 class DebugLevel(str, Enum):
     """The predefined levels for debugging."""
@@ -730,11 +729,22 @@ class DebugLevel(str, Enum):
     CRITICAL = constants.logging.Critical
 ```
 
-[comment]: <> ( }}} )
+<!--
+
+You will notice that the command-line interface requires a variable of type
+DebugLevel, which we can now investigate further. The idea behind this class is
+that we want to allow a person using WorkKnow to specify when running the
+program the amount of debugging information it produces. If a person instructs
+WorkKnow to report details at the DEBUG level it will create a lot of output.
+Conversely, if the ERROR or CRITICAL levels are chosen then WorkKnow will
+produce comparatively little output only when something goes seriously wrong.
+
+**Review each line of source code.**
+
+-->
 
 ---
 
-[comment]: <> ( {{{ )
 
 ## Command-Line Interface
 
