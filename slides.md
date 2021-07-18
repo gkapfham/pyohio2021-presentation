@@ -549,7 +549,7 @@ output to tell you two stories!
 The experiences that I share in this talk took place in the context of building
 an open-source program, called WorkKnow, that keeps you "in the know" about the
 history of workflow builds on GitHub Actions. WorkKnow uses GitHub's REST API to
-download the history of workflow executions. It them extracts, parses, and
+download the history of workflow executions. It then extracts, parses, and
 summarizes the data and stores the most important results in CSV files.
 
 **CUT IN SHORT VERSION**
@@ -574,7 +574,7 @@ tool!
 
 <div class="ml-2 my-2">
 
-```python {all|1|2|3-4|5|6-8|9|10-11|all}
+```python {all|1-4|5|6-8|9-10}
 import typer
 cli = typer.Typer()
 @cli.command()
@@ -583,7 +583,6 @@ def download(
     repos_csv_file: Path = typer.Option(None),
     results_dir: Path = typer.Option(None),
     env_file: Path = typer.Option(None),
-    save: bool = typer.Option(False),
     debug_level: debug.DebugLevel =
          debug.DebugLevel.ERROR,
 ):
@@ -600,46 +599,6 @@ Let's review the source code of this code segment to better understand how Typer
 works and how it uses type annotations.
 
 **Review each highlighted line of source code.**
-
--->
-
----
-
-# Defining the <code>DebugLevel</code> Enumeration
-
-<br>
-
-```python {all|0}
-from enum import Enum
-```
-
-```python {0|all|0}
-from workknow import constants
-```
-
-```python {all|1-2|4-9}
-
-class DebugLevel(str, Enum):
-    """The predefined levels for debugging."""
-
-    DEBUG = constants.logging.Debug
-    INFO = constants.logging.Info
-    WARNING = constants.logging.Warning
-    ERROR = constants.logging.Error
-    CRITICAL = constants.logging.Critical
-```
-
-<!--
-
-You will notice that the command-line interface requires a variable of type
-DebugLevel, which we can now investigate further. The idea behind this class is
-that we want to allow a person using WorkKnow to specify when running the
-program the amount of debugging information it produces. If a person instructs
-WorkKnow to report details at the DEBUG level it will create a lot of output.
-Conversely, if the ERROR or CRITICAL levels are chosen then WorkKnow will
-produce comparatively little output only when something goes seriously wrong.
-
-**Review each line of source code.**
 
 -->
 
@@ -733,7 +692,7 @@ to the fact that source code stipulated that it was of the type DebugLevel.
 
 # Defect Detection with Pyright
 
-```python {all|1-3|5-8|9-10|all}
+```python {all}
 def create_results_zip_file(
     results_dir: Path, results_files: List[str]
  ) -> None:
@@ -760,15 +719,19 @@ that is saves about the history of GitHub Action workflows for different
 projects. This feature has come in handy when the data that it downloads is too
 large to send to someone on a per-file basis.
 
-After walking through the source code for this function, I have a story to tell
-you about how type annotations helped me to implement it correctly!
-
-**Explain each line of source code in the function.**
-
 When I first wrote this function, I did so in the way that you see right now.
 That leads me to my next question:
 
 - Can you find the bug in this program?
+
+Thankfully, Pyright can find it for us!
+
+**CUT IN SHORT VERSION**
+
+After walking through the source code for this function, I have a story to tell
+you about how type annotations helped me to implement it correctly!
+
+**Explain each line of source code in the function.**
 
 Although I acknowledge that the defect is a small one and that, in fact, I would
 have been able to find it without using type annotations and type checkers, I'm
