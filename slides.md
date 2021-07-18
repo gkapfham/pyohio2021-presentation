@@ -38,14 +38,9 @@ title: Type Annotations in Python
  &nbsp;
 </div>
 
-<v-click>
-
-```python {all|1|2|}
-def start(t: Talk) -> Union[Fun, Info]:
-def start(t: Talk) -> List[Fun, Info]:
+```python {all}
+def start(t: Talk) -> List[Fun, Learn]:
 ```
-
-</v-click>
 
 <!--
 
@@ -255,16 +250,12 @@ def extract_urls(df):
 
 <br>
 
-<div v-click>
-
 <div class="flex row">
 
 <uim-refresh class="text-6xl ml-2 mt-4 text-orange-600" />
 
 <div class="text-3xl font-bold mt-8 ml-4">
 What happens if the program becomes more complex?
-</div>
-
 </div>
 
 </div>
