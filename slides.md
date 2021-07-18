@@ -224,11 +224,12 @@ The second question is:
 - What is the behavior of the return urls statement in this function?
 Specifically, what is the type of data that this function returns? In this
 specific case, we can scan the rest of the function's source code to note that
-urls is a variable of type list.
+urls is a variable of type list. However, this version of the function
+does not reveal the type of the data stored in the list!
 
-With that said, it is important to note that if this function was a part of a
-more complex Python program then it would become more difficult to have a
-full-featured understanding of the inputs, outputs, and behavior of
+Moreover, it is important to note that if this function was a part of a more
+complex Python program then it would become more difficult for a programmer to
+have a full-featured understanding of the inputs, outputs, and behavior of
 extract_urls.
 
 -->
@@ -276,16 +277,15 @@ What happens if the program becomes more complex?
 With that said, it is important to note that if this function was a part of a
 more complex Python program then it would become more difficult to have a
 full-featured understanding of the inputs, outputs, and behavior of
-extract_urls.
+extract_urls. For instance, if the function had more lines of code it would be
+more difficult for a programmer to see that urls is a list. And, remember,
+discovering that it is a list would not reveal the type of data the list stored!
 
 -->
 
 ---
 
 # Python Program with Annotations
-
-<style>
-</style>
 
 <div class="-ml-9">
 
@@ -316,10 +316,35 @@ How does <code>List[str]</code> describe output of <code>extract_urls</code> ?
 
 </v-clicks>
 
-[comment]: <> ( {{{ )
+<!--
+
+This is a version of the extract_urls function that uses type annotations. You
+will notice that the main difference between this function and the previous
+version is that its signature is different. Let's take a look at it more closely
+and answer some questions about its syntax and semantics.
+
+The first question to ask and answer is:
+
+- What is the purpose of df: pandas.DataFrame?
+
+In response to this question, note that df is the variable and pandas.DataFrame
+is the type annotation for the variable. This type annotation tells the
+programmer --- and the tools used by the programmer --- that df contains tabular
+data in the form of a DataFrame.
+
+The second question is:
+
+- How does List[str] describe the output of the extract_urls functions?
+
+In this case, the type annotation clearly reveals that the list returned by this
+function must contain string variables. The type annotation will help the
+programmer to understand the function's output while also enabling tools like
+type checkers to ensure that all functions calling this one store the return
+value in a list designed for strings.
+
+-->
 
 ---
-
 
 <div class="flex row">
 
