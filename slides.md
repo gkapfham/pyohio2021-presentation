@@ -380,7 +380,31 @@ What are the trade-offs of type annotations?
 
 </v-clicks>
 
-[comment]: <> ( }}} )
+<!--
+
+When I first saw a Python function with type annotations several pressing
+questions came to my mind.
+
+First:
+
+- Wait, isn't the function with type annotations syntactically more complicated
+than the one that does not have them?
+
+Second:
+
+- Are there any real benefits to type annotations if they are going to take
+extra time for me to write them?
+
+And, finally:
+
+- In the context of Python programming, what are the trade-offs of type
+annotations? If they take extra time for programmers to write, can they realize
+any benefits in terms of programmer productivity or software quality?
+
+Let's investigate some of the challenges and benefits associated with adding
+type annotations to our Python programs!
+
+-->
 
 ---
 
