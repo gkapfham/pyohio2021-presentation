@@ -2,19 +2,18 @@
 theme: ./simple
 class: text-center
 highlighter: prism
-colorSchema: 'light'
+colorSchema: light
 download: true
-preload: false
+preload: true
 fonts:
-  # basically the text
-  sans: 'IBM Plex Sans'
-  # use with `font-serif` css class from windicss
-  serif: 'IBM Plex'
-  # for code blocks, inline code, etc.
-  mono: 'Fira Code'
+  sans: IBM Plex Sans
+  serif: IBM Plex
+  mono: Fira Code
+  italic: true
 info: |
   ## Simple-slidev-sample
   Simple Slidev Sample
+title: Type Annotations in Python
 ---
 
 # Type Annotations in Python
@@ -47,6 +46,31 @@ def start(t: Talk) -> List[Fun, Info]:
 ```
 
 </v-click>
+
+<!--
+Hello, my name is Gregory Kapfhammer. I'm a computer science professor and a
+software engineer and I have a question: "are you a Python programmer who wants
+to write high quality software? " If you are, then I hope that you will stay
+tuned to this talk! It will reveal how the use of type annotations can make it easier to
+add features to and find bugs in your program.
+
+Type annotations tell both tools and developers about the kind of data stored in
+a variable. If you are like me, then you might have found that these annotations
+are terribly intimidating. However, I kept using type annotations in several of
+my recent Python projects and now I find them tremendously informative!
+
+I don't always add type annotations to my programs and, of course, I still get
+confused and make mistakes some times. However, my current view is that
+when linting and testing are combined with types and type checkers, I write
+better Python programs with fewer defects.
+
+Do you want to learn more about type annotations in Python? Are you interested
+in learning to use cool new tools that improve programmer productivity? You
+are? Great! Let's dive into the presentation!
+
+The title of my talk is "Type Annotations in Python: Terribly Intimidating or
+Tremendously Informative?" and it was originally given at PyOhio 2021.l
+-->
 
 ---
 
@@ -632,3 +656,61 @@ with zipfile.ZipFile(
 </v-click>
 
 [comment]: <> ( }}} )
+
+---
+
+# Type Annotations in Python
+
+<style>
+  h1 {
+    @apply text-6xl -my-2 leading-20 font-bold text-dark-100 text-orange-600;
+  }
+  h2 {
+    @apply text-4xl leading-20 font-bold text-dark-100;
+  }
+  code {
+    font-size: 36px;
+  }
+</style>
+
+## Terribly Intimidating or Tremendously Informative?
+
+<v-clicks>
+
+<div class="flex row">
+
+<uim-exclamation-triangle class="text-7xl ml-0 mt-0 text-blue-600" />
+
+<div class="text-4xl font-medium mt-6 ml-4">
+Programmers define types
+</div>
+
+</div>
+
+<div class="flex row">
+
+<uim-layer-group class="text-7xl ml-0 mt-8 text-blue-600" />
+
+<div class="text-4xl font-medium mt-12 ml-4">
+Automatically create command-line
+</div>
+
+</div>
+
+<div class="flex row">
+
+<uim-layers-alt class="text-7xl ml-0 mt-8 text-blue-600" />
+
+<div class="text-4xl font-medium mt-12 ml-4">
+Type checkers automatically find bugs
+</div>
+
+</div>
+
+</v-clicks>
+
+<!--
+
+This is a note
+
+-->
