@@ -574,7 +574,7 @@ tool!
 
 <div class="ml-2 my-2">
 
-```python {all|1-4|5|6-8|9-10}
+```python {all|1-4|5|6-8|all}
 import typer
 cli = typer.Typer()
 @cli.command()
@@ -583,12 +583,24 @@ def download(
     repos_csv_file: Path = typer.Option(None),
     results_dir: Path = typer.Option(None),
     env_file: Path = typer.Option(None),
-    debug_level: debug.DebugLevel =
-         debug.DebugLevel.ERROR,
 ):
 ```
 
 </div>
+
+<v-click>
+
+<div class="flex row">
+
+<uim-github class="text-7xl ml-0 mt-0 text-blue-600" />
+
+<div class="text-4xl font-medium mt-6 ml-4">
+See <code>AnalyzeActions/WorkKnow</code> for details!
+</div>
+
+</div>
+
+</v-click>
 
 <!--
 
@@ -598,7 +610,21 @@ interfaces in Python then you should right away! It is awesome!
 Let's review the source code of this code segment to better understand how Typer
 works and how it uses type annotations.
 
+<br>
+
 **Review each highlighted line of source code.**
+
+- The first four lines of the function import typer and designate that the
+download will be one of the program's main commands
+
+- Download's first parameter is a list of GitHub repository URLs with builds to
+analyze
+
+- The next three parameters are pathlib Path objects to files and directories
+that WorkKnow needs to collect inputs and save output
+
+WorkKnow's command-line interface also accepts other arguments. Checkout its
+GitHub repository for more details!
 
 -->
 
@@ -659,8 +685,8 @@ Options:
 
 <!--
 
-What you see on the screen now is what would appear in your terminal window if
-you typed "workknow download --help". It is important to stress that:
+This is what would appear in your terminal window if you typed "workknow
+download --help". It is important to stress that:
 
 <br>
 
@@ -670,17 +696,21 @@ you typed "workknow download --help". It is important to stress that:
 like the one you see here.
 
 - Since Typer know the type of each command-line argument it can perform error
-checking to make sure that a person definitely passes, for instance, a string or
-a boolean in the right order and for the right parameter. If you have ever built
-a command-line interface using argparse then you probably remember how long it
-took you to write the error-prone code that verifies the arguments. Now, as long
-as you add the type of each variable, Typer can do all of this work for you!
+checking to make sure that a person definitely uses the right arguments.
 
 - Amazingly, Typer can also convert all of the strings that a person passes into
 the program on the command-line into the correct type for the program! For
 instance, if the program accepts a string that points to the directory in which
 WorkKnow should store the data, then Typer will convert that string to a pathlib
 Path without any effort on the part of the programmer! Fantastic!
+
+**CUT IN SHORT VERSION**
+
+, for instance, a string or a boolean in the right order and for the right
+parameter. If you have ever built a command-line interface using argparse then
+you probably remember how long it took you to write the error-prone code that
+verifies the arguments. Now, as long as you add the type of each variable, Typer
+can do all of this work for you!
 
 - Finally, did you notice how Typer will only allow a person to specify specific
 values for the debugging level command-line argument. Again, this feature is due
@@ -715,7 +745,7 @@ def create_results_zip_file(
 <!--
 
 One of WorkKnow's features is that it can create a ZIP file of all the results
-that is saves about the history of GitHub Action workflows for different
+that it saves about the history of GitHub Action workflows for different
 projects. This feature has come in handy when the data that it downloads is too
 large to send to someone on a per-file basis.
 
