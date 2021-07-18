@@ -675,7 +675,7 @@ tool!
 <div class="ml-2 my-2">
 
 ```python {all|1|2|3-4|5|6-8|9|10-11|all}
-import python
+import typer
 cli = typer.Typer()
 @cli.command()
 def download(
@@ -691,11 +691,20 @@ def download(
 
 </div>
 
-[comment]: <> ( }}} )
+<!--
+
+If you have not yet tried the Typer package for the construction of command-line
+interfaces in Python then you should right away! It is awesome!
+
+Let's review the source code of this code segment to better understand how Typer
+works and how it uses type annotations.
+
+**Review each highlighted line of source code**
+
+-->
 
 ---
 
-[comment]: <> ( {{{ )
 
 # Defining the <code>DebugLevel</code> Enumeration
 
