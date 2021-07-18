@@ -745,7 +745,6 @@ produce comparatively little output only when something goes seriously wrong.
 
 ---
 
-
 ## Command-Line Interface
 
 <style>
@@ -791,7 +790,7 @@ Options:
 - Using type annotations, Typer can:
   - automatically generate all menus
   - perform error checking on all arguments
-  - convertall arguments to the correct type
+  - convert all arguments to the correct type
 
 </div>
 
