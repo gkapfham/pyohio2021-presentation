@@ -58,7 +58,7 @@ bugs in your Python code.
 
 Type annotations tell both tools and developers about the kind of data stored in
 a variable. If you are like me, then you might have found that these annotations
-are terribly intimidating. However, I kept using type annotations in several of
+are terribly intimidating. However, I kept us¡ng type annotations in several of
 my recent Python projects and now I find them to be tremendously informative!
 
 I don't always add type annotations to my programs and, of course, I still get
@@ -76,6 +76,8 @@ Tremendously Informative?" and it was originally given at PyOhio 2021.
 In it I share my experiences with using type annotations in a Python
 project that I created recently to download information about the run of GitHub
 Action workflows from GitHub's REST API.
+
+**CUT IN SHORT VERSION**
 
 But first, check out the start function at the bottom of this slide.
 
