@@ -75,7 +75,7 @@ In it I will share my experiences with using type annotations in a Python
 project that I created recently to download information about the run of GitHub
 Action workflows from GitHub's REST API.
 
-But first, check out the `start` function at the bottom of this slide.
+But first, check out the start function at the bottom of this slide.
 
 **Explain**:
 
@@ -138,7 +138,25 @@ Let's explore type annotations in Python programs!
 
 <!--
 
-Example
+At the start of this talk, let's ask and answer another question: what is this
+presentation about?
+
+First, the talk has two key questions:
+
+- What are the benefits and challenges associated with using type annotations in
+Python programs?
+- Will types make me a better Python programmer?
+
+I had you in mind when I was preparing this talk if you are an adventuresome
+Python programmer who wants to explore how type annotations --- and their new
+paradigm for thinking and affiliated software tools --- can improve your
+development workflow.
+
+Don't be concerned if you have never used types before or if you found them
+confusing the last time you tried to add them to your Python program. And, if
+you are an programmer who has used types before, I hope that your adventuresome
+spirit will convince you to stick around since I'm hopeful will learn
+something new in the next ten minutes.
 
 -->
 
