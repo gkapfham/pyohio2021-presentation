@@ -547,10 +547,12 @@ output to tell you two stories!
 - **Read the defect finding comments**
 
 The experiences that I share in this talk took place in the context of building
-an open source program, called WorkKnow, they keeps you "in the know" about the
-history of your workflow builds on GitHub Actions. WorkKnow uses GitHub's REST
-API to download the history of workflow executions, extracts, parses, and
+an open-source program, called WorkKnow, that keeps you "in the know" about the
+history of workflow builds on GitHub Actions. WorkKnow uses GitHub's REST API to
+download the history of workflow executions. It them extracts, parses, and
 summarizes the data and stores the most important results in CSV files.
+
+**CUT IN SHORT VERSION**
 
 I'm building and using WorkKnow because it helps me to gain insights into the
 trends evident in both my GitHub action workflows and the workflows of popular
