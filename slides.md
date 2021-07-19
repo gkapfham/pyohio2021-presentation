@@ -43,7 +43,6 @@ def start(t: Talk) -> List[Fun, Learn]:
 ```
 
 <!--
-
 Hello, my name is Gregory Kapfhammer. I'm a computer science professor and a
 software engineer and I have a question: "are you a Python programmer who wants
 to write high quality software? " If you are, then I hope that you will stay
@@ -62,8 +61,8 @@ when linting and testing are combined with types and type checkers, I write
 better Python programs with fewer defects.
 
 Do you want to learn more about type annotations in Python? Are you interested
-in learning to use cool new tools that improve programmer productivity? You
-are? Great! Let's dive into the presentation!
+in learning to use cool new tools that improve programmer productivity? Let's
+dive into the presentation!
 
 The title of this talk is "Type Annotations in Python: Terribly Intimidating or
 Tremendously Informative?" and it was originally given at PyOhio 2021.
@@ -85,7 +84,6 @@ informative
 
 Let's pick the second option in hopes that this talk is both fun and informative
 for you!
-
 -->
 
 ---
