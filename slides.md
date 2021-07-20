@@ -114,7 +114,7 @@ for you!
 
 ## Intended Audience
 
-> An **adventuresome** Python programmer who wants to explore how a both new
+> An **adventuresome** Python programmer who wants to explore how both a new
 > **paradigm** and software **tools** can improve their development skills!
 
 </div>
