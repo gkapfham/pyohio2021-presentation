@@ -602,11 +602,13 @@ See <code>AnalyzeActions/WorkKnow</code> for details!
 
 <!--
 
+Let's create a command-line interface for WorkKnow.
+
 If you have not yet tried the Typer package for the construction of command-line
 interfaces in Python then you should right away! It is awesome!
 
-Let's review the source code of this code segment to better understand how Typer
-works and how it uses type annotations.
+Now we can review this source code segment to better understand how Typer works
+and how it uses type annotations.
 
 <br>
 
@@ -849,7 +851,7 @@ Pyright's error again, I realized that I had made a mistake by passing
 results_files, a list containing strings, instead of results_file, the specific
 file, to the write function.
 
-Yep, one single s would have caused a major problem when I either ran the test
+Yep, one extra s would have caused a major problem when I either ran the test
 suite or the program itself! Of course, it is reasonable to ask whether or not I
 would have found this bug by other means. Yes, I think that I would have! But,
 it was nice to find it so quickly through the use of type annotations and the
