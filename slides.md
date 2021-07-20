@@ -412,7 +412,7 @@ type annotations to our Python programs!
 </style>
 
 - *Readability* : function signatures are more difficult to read
-- *Productivity* : programmer often must add type annotations
+- *Productivity* : programmers often must add type annotations
 - *Complexity* : programs use many new classes and types
 
 </div>
