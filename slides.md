@@ -104,7 +104,7 @@ for you!
 ## Key Questions
 
 > What are the **benefits** and **challenges** associated with using type annotations
-> inside of Python program? Will types make me be a better programmer?
+> inside of Python program? Will types make me a better programmer?
 
 </div>
 
@@ -190,7 +190,7 @@ What is the type of <code>df</code> ? The terrible docstring does not say!
 </p>
 
 <p class = "bold">
-What is behavior of <code>return urls</code> in this function?
+What is the behavior of <code>return urls</code> in this function?
 </p>
 
 </v-clicks>
