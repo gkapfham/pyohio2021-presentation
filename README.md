@@ -1,4 +1,4 @@
-# simple-slidev-sample
+# PyOhio 2021 Presentation
 
 ## Introduction
 
@@ -11,9 +11,9 @@ teaching, that were created with LaTeX and Beamer.
 
 To start the slide show:
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+- Type `npm install` in the project directory
+- Type `npm run dev` to start a local development server
+- Visit http://localhost:3030 to view the slides
 
 ## Steps
 
