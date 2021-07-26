@@ -4,10 +4,12 @@
 
 ## Introduction
 
-Sample slides created by [Gregory M.
-Kapfhammer](https://www.gregorykapfhammer.com/) to illustrate the use of
-Slidev's features. These slides were created from other slides, that I used for
-teaching, that were created with LaTeX and Beamer.
+Slides created by [Gregory M. Kapfhammer](https://www.gregorykapfhammer.com/)
+for a presentation given at [PyOhio 2021](https://www.pyohio.org/2021/). The
+title of the presentation is "Type Annotations in Python: Terribly
+Intimidating or Tremendously Informative?". You can [watch a YouTube
+video](https://youtu.be/6bCBl-soYFg) of the talk or [view the live version of
+the slides](https://pyohio2021-presentation.netlify.app/).
 
 ## Installation
 
