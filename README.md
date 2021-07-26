@@ -39,7 +39,7 @@ PDF-based presentation created by `npm run export` may vary slightly from the
 version created by either the `npm run dev`, `npm run remote`, or `npm run
 build` commands.
 
-## Steps
+## Modifying or Adding Slides
 
 You can edit the [slides.md](./slides.md) to see the changes. You can learn more
 about Slidev by visiting its [web site](https://sli.dev/).
