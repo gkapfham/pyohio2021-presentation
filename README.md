@@ -43,5 +43,8 @@ build` commands.
 
 ## Modifying or Adding Slides
 
-You can edit the [slides.md](./slides.md) to see the changes. You can learn more
-about Slidev by visiting its [web site](https://sli.dev/).
+You can edit the [slides.md](./slides.md) in a text editor. If you have a
+development server running, then it will notice these changes and regenerate the
+web sited and automatically reload your browser, allowing you to to see the
+changes. You can learn more about Slidev by visiting its [web
+site](https://sli.dev/).
