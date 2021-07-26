@@ -1,6 +1,6 @@
 # PyOhio 2021 Presentation
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5dddd2ae-56ca-4047-a4f7-147059bb96f7/deploy-status)](https://app.netlify.com/sites/pyohio2021-presentation/deploys)
+![](../../workflows/build/badge.svg) ![](../../workflows/release/badge.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/5dddd2ae-56ca-4047-a4f7-147059bb96f7/deploy-status)](https://app.netlify.com/sites/pyohio2021-presentation/deploys)
 
 ## Introduction
 
