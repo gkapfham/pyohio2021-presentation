@@ -418,6 +418,8 @@ type annotations to our Python programs!
 
 </div>
 
+<div v-click>
+
 <div>
 
 # Benefits
@@ -427,6 +429,9 @@ type annotations to our Python programs!
 - *Understanding* : developers understand the structure of data
 
 </div>
+
+</div>
+
 </div>
 
 <div v-click>
