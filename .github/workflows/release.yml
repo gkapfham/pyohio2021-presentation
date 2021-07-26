@@ -27,10 +27,11 @@ jobs:
         run: |
             npm install
             npm run export
+            cp slides-export.pdf pyohio2021-presentation.pdf
       # Release a PDF of the presentation slides
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: slides-export.pdf
+          files: pyohio2021-presentation.pdf
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
