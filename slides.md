@@ -43,6 +43,7 @@ def start(t: Talk) -> List[Fun, Learn]:
 ```
 
 <!--
+
 Hello, my name is Gregory Kapfhammer. I'm a computer science professor and a
 software engineer and I have a question: "are you a Python programmer who wants
 to write high quality software? " If you are, then I hope that you will stay
@@ -78,12 +79,12 @@ But first, check out the start function at the bottom of this slide.
 **Explain**:
 
 - The talk parameter
-- That Union[Fun, Info] means that the talk could either be fun or
-informative
+- That Union[Fun, Info] means that the talk could either be fun or informative
 - That List[Fun, Into] suggests that the talk could be both fun and informative
 
 Let's pick the second option in hopes that this talk is both fun and informative
 for you!
+
 -->
 
 ---
