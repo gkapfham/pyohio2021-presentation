@@ -23,6 +23,21 @@ Now you are ready to view the presentation! To start the slide show:
 - Type `npm install` to install the project's dependencies
 - Type `npm run dev` to start a local development server
 - Visit http://localhost:3030 to view the slides
+- Visit http://localhost:3030/presenter to view the slides in presenter mode
+
+The slide show also features other building and development options:
+
+- Typing `npm run remote` will run an additional server supporting remote access
+  to your laptop. Please see the diagnostic output for the correct address for
+  the server.
+- Typing `npm run build` will create a production version of the presentation in
+  the form of static HTML
+- Typing `npm run export` will create a PDF of the presentation.
+
+Please note that, depending on your version of Playwright, the formatting of the
+PDF-based presentation created by `npm run export` may vary slightly from the
+version created by either the `npm run dev`, `npm run remote`, or `npm run
+build` commands.
 
 ## Steps
 
