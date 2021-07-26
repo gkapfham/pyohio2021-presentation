@@ -42,4 +42,4 @@ build` commands.
 ## Steps
 
 You can edit the [slides.md](./slides.md) to see the changes. You can learn more
-about Slidev on [documentations](https://sli.dev/).
+about Slidev by visiting its [web site](https://sli.dev/).
